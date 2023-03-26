@@ -1,0 +1,27 @@
+local codes = {
+    "X2POWER20MIN",
+    "SORRYSHUT1",
+    "Ascend",
+    "BugsSquashed",
+    "Celestial",
+    "Christmas",
+    "COLLECTOR",
+    "Eggmaster",
+    "FeelingLucky",
+    "GetRich",
+    "GODLIKE",
+    "Holiday",
+    "Kolapo",
+    "NewYear",
+    "Oatsz",
+    "Secret",
+    "Sharpen",
+    "Spraden",
+    "Striker",
+    "Strongest",
+    "LUCKY100"
+}
+
+for _, code in ipairs(codes) do
+    game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("CodeService"):WaitForChild("RF"):WaitForChild("RedeemCode"):InvokeServer(code)
+end
