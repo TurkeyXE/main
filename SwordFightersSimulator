@@ -1,0 +1,21 @@
+local fishList = {
+    "Gold Fish",
+    "Frog",
+    "Octopus",
+    "Electric Eel",
+    "Paddle Fish",
+    "Grouper",
+    "Arowana",
+    "Betta Fish",
+    "Saw Fish",
+    "Bull Shark"
+}
+
+local event = game:GetService("ReplicatedStorage").Packages.Knit.Services.FishingService.RF.AddFish
+
+while true do
+    for _, fish in ipairs(fishList) do
+        event:InvokeServer(fish)
+    end
+    wait(0.1)
+end
